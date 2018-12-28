@@ -1,0 +1,20 @@
+{application, zlogstatd,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { zlogstatd_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    rabbit_common,
+    amqp_client,
+    recon,
+    lager
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
